@@ -1,0 +1,36 @@
+{
+  "name": "flutter_project_formative",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andres-fsh/flutter_project_formative.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andres-fsh/flutter_project_formative/issues"
+  },
+  "homepage": "https://github.com/Andres-fsh/flutter_project_formative#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.14.4",
+    "pg": "^8.16.3",
+    "sequelize": "^6.37.7"
+  },
+  "description": "",
+  "devDependencies": {
+    "dotenv": "^17.2.3",
+    "nodemon": "^3.1.10",
+    "sequelize-cli": "^6.6.3"
+  }
+}

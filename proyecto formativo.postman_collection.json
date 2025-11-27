@@ -1,0 +1,1504 @@
+{
+	"info": {
+		"_postman_id": "1f18cd94-d11c-4b7c-92fd-65c0dd61d1d9",
+		"name": "proyecto formativo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44721111"
+	},
+	"item": [
+		{
+			"name": "roles",
+			"item": [
+				{
+					"name": "getAllRoles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createRoles",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"name\": \"Aministrador\",\r\n        \"description\": \"Actualiza toda la información\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/roles/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"roles",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneRoles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/roles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"roles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateRoles",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Aprendices\",\r\n    \"description\": \"Clientes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/roles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"roles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteRoles",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/roles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"roles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "projectSennovas",
+			"item": [
+				{
+					"name": "getAllprojectSennovas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/projectSennovas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"projectSennovas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createprojectSennovas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Proyecto de Innovación Tecnológica\",\r\n    \"description\": \"Desarrollo de solución IoT para agricultura\",\r\n    \"startDate\": \"2024-02-01\",\r\n    \"endDate\": \"2024-12-15\",\r\n    \"fkIdConsultancies\": 2,     \r\n    \"fkIdLinesSennova\": 1       \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/projectSennovas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"projectSennovas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneprojectSennovas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/projectSennovas/19",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"projectSennovas",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateprojectSennovas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Proyecto de Innovación Tecnológica\",\r\n    \"description\": \"desarrollo de solución IoT para agricultura\",\r\n    \"startDate\": \"2024-01-00\",\r\n    \"endDate\": \"2024-12-15\",\r\n    \"fkIdConsultancies\": 2,     \r\n    \"fkIdLinesSennova\": 1       \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/projectSennovas/19",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"projectSennovas",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteprojectSennovas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/projectSennovas/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"projectSennovas",
+								"18"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "InformationSennova",
+			"item": [
+				{
+					"name": "getAllInformationSennova",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/informationSennova",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"informationSennova"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createInformationSennova",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mision\": \"Promover la innovación y el desarrollo tecnológico en la región\",\r\n    \"vision\": \"Ser líder en transformación digital e innovación para 2030\",\r\n    \"description\": \"Centro de innovación dedicado al desarrollo de soluciones tecnológicas avanzadas\",\r\n    \"staff\": \"50 profesionales especializados\",\r\n    \"lineSennova\": \"Tecnología, Innovación y Desarrollo\",\r\n    \"ourServices\": \"Consultoría, Desarrollo de software, Investigación aplicada\",\r\n    \"updateDate\": \"2024-01-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/informationSennova",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"informationSennova"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneInformationSennova",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/informationSennova/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"informationSennova",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateInformationSennova",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mision\": \"Promover la innovación\",\r\n    \"vision\": \"Ser líder en transformación digital e innovación para 2030\",\r\n    \"description\": \"Centro de innovación dedicado al desarrollo de soluciones tecnológicas avanzadas\",\r\n    \"staff\": \"50 profesionales especializados\",\r\n    \"lineSennova\": \"Tecnología, Innovación y Desarrollo\",\r\n    \"ourServices\": \"Consultoría, Desarrollo de software, Investigación aplicada\",\r\n    \"updateDate\": \"2024-01-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/informationSennova/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"informationSennova",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteInformationSennova",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/informationSennova/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"informationSennova",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "satisfactionSurveys",
+			"item": [
+				{
+					"name": "getAllsatisfactionSurveys",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/satisfactionSurveys",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"satisfactionSurveys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createsatisfactionSurveys",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"surveyOne\": \"5\",\r\n    \"surveyTwo\": \"5\",\r\n    \"surveyThree\": \"5\",\r\n    \"surveyFour\": \"4\",\r\n    \"surveyFive\": \"3\",\r\n    \"surveySix\": \"2\",\r\n    \"surveySeven\": \"1\",\r\n    \"surveyEight\": \"3\",\r\n    \"observations\": \"5\",\r\n    \"fkIdTypeForms\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/satisfactionSurveys",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"satisfactionSurveys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOnesatisfactionSurveys",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/satisfactionSurveys/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"satisfactionSurveys",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatesatisfactionSurveys",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"surveyOne\": \"5\",\r\n    \"surveyTwo\": \"5\",\r\n    \"surveyThree\": \"5\",\r\n    \"surveyFour\": \"3\",\r\n    \"surveyFive\": \"3\",\r\n    \"surveySix\": \"2\",\r\n    \"surveySeven\": \"1\",\r\n    \"surveyEight\": \"3\",\r\n    \"observations\": \"5\",\r\n    \"fkIdTypeForms\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/satisfactionSurveys/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"satisfactionSurveys",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletesatisfactionSurveys",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/satisfactionSurveys/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"satisfactionSurveys",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "applicationForms",
+			"item": [
+				{
+					"name": "getapplicationForms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/applicationForms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"applicationForms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createapplicationForms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userType\": \"Empresa\",\r\n    \"name\": \"Juan Pérez\",\r\n    \"identificationType\": \"Cédula\",\r\n    \"email\": \"juan@empresa.com\",\r\n    \"phone\": 3001234567,\r\n    \"companyName\": \"Mi Empresa SAS\",\r\n    \"description\": \"Solicitud de apoyo para proyecto de innovación\",\r\n    \"fkIdTypeForms\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/applicationForms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"applicationForms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getapplicationForms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/applicationForms/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"applicationForms",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateapplicationForms",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userType\": \"Empresa\",\r\n    \"name\": \"Juan Jose\",\r\n    \"identificationType\": \"Cédula\",\r\n    \"email\": \"juanPosada@empresa.com\",\r\n    \"phone\": 3001234567,\r\n    \"companyName\": \"Mi Empresa SAS\",\r\n    \"description\": \"Solicitud de apoyo para proyecto de innovación\",\r\n    \"fkIdTypeForms\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/applicationForms/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"applicationForms",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteapplicationForms",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/applicationForms/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"applicationForms",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "categoriesNews",
+			"item": [
+				{
+					"name": "getAllCategoriesNews",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"frutas\",\r\n    \"descripcion\": \"frutas rojas\",\r\n    \"imagen\": \"/images/frutas.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/categoriesNews/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"categoriesNews",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createCategoryNews",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Deportes\",\r\n  \"description\": \"Noticias relacionadas con eventos deportivos.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/categoriesNews/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"categoriesNews",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCategoryNews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/categoriesNews/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"categoriesNews",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCategoryNews",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Deportes Nacionales\",\r\n  \"description\": \"Noticias y resultados deportivos de ligas locales.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/categoriesNews/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"categoriesNews",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCategoryNews",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/categoriesNews/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"categoriesNews",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "news",
+			"item": [
+				{
+					"name": "getAllNews",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"frutas\",\r\n    \"descripcion\": \"frutas rojas\",\r\n    \"imagen\": \"/images/frutas.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/news",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createNews",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Nueva tecnología revoluciona el mercado\",\r\n    \"summary\": \"Una innovadora tecnología está transformando la industria con sus avances significativos...\",\r\n    \"picture\": \"https://ejemplo.com/imagen.jpg\",\r\n    \"date\": \"2024-01-15\",\r\n    \"fkIdCategoriesNews\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/news",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getNews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/news/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"news",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateNews",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Nueva tecnología revoluciona el mundo del deporte\",\r\n    \"summary\": \"Una innovadora tecnología está transformando la industria\",\r\n    \"picture\": \"https://ejemplo.com/imagen.jpg\",\r\n    \"date\": \"2024-01-15\",\r\n    \"fkIdCategoriesNews\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/news/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"news",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteNews",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/news/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"news",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "getAllUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createUsers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"johndoe\",\r\n  \"password\": \"password123\",\r\n  \"email\": \"john.doe@example.com\",\r\n  \"name\": \"John\",\r\n  \"lastName\": \"Doe\",\r\n  \"phone\": 123456789,\r\n  \"photo\": \"http://example.com/photo.jpg\",\r\n  \"fkIdRoles\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUsers",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"johndoe\",\r\n  \"password\": \"password123\",\r\n  \"email\": \"john.doe@example.com\",\r\n  \"name\": \"John\",\r\n  \"lastName\": \"Do\",\r\n  \"phone\": 123456789,\r\n  \"photo\": \"http://example.com/photo.jpg\",\r\n  \"fkIdRoles\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUsers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "consultancies",
+			"item": [
+				{
+					"name": "getAllConsultancies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/consultancies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"consultancies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createConsultancies",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2024-01-15\",\r\n    \"state\": \"pendiente\",\r\n    \"description\": \"Consulta sobre desarrollo web\",\r\n    \"fkIdUsers\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/consultancies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"consultancies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneConsultancies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/consultancies/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"consultancies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateConsultancies",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2024-01-15\",\r\n    \"state\": \"Activado\",\r\n    \"description\": \"Consulta sobre desarrollo web\",\r\n    \"fkIdUsers\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/consultancies/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"consultancies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteConsultancies",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/consultancies/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"consultancies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LinesSennova",
+			"item": [
+				{
+					"name": "getAllLines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/lineSennova",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"lineSennova"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createLines",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nombre de la línea\",\r\n    \"description\": \"Descripción de la línea\",\r\n    \"fkIdUsers\": 1\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/lineSennova",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"lineSennova"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneLines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/lineSennova/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"lineSennova",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateLines",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SOFTWARE\",\r\n    \"description\": \"Linea de software\",\r\n    \"fkIdUsers\": 1\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/lineSennova/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"lineSennova",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteLines",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/lineSennova/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"lineSennova",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "typesforms",
+			"item": [
+				{
+					"name": "getTypesForms",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/typeForms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"typeForms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createTypesForms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Formulario de investigación\",\r\n    \"fkIdLinesSennova\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/typeForms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"typeForms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneTypesForms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/typeForms/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"typeForms",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateTypesForms",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SOFTWARE\",\r\n    \"description\": \"Linea de software sena\",\r\n    \"fkIdUsers\": 1\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/typeForms/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"typeForms",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTypesForms",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/lineSennova/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"lineSennova",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
